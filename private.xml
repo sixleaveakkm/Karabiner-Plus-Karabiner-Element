@@ -1,0 +1,59 @@
+<?xml version="1.0"?>
+<root>
+    <devicevendordef>
+        <vendorname>Ducky</vendorname>
+        <vendorid>0x04d9</vendorid>
+    </devicevendordef>
+    <deviceproductdef>
+        <productname>Shine3</productname>
+        <productid>0x0183</productid>
+    </deviceproductdef>
+
+
+    <vkchangeinputsourcedef>
+        <name>KeyCode::VK_CHANGE_INPUTSOURCE_CHINESE_SOGOU</name>
+        <inputmodeid_equal>com.sogou.inputmethod.pinyin</inputmodeid_equal>
+    </vkchangeinputsourcedef>
+
+    <item>
+    	<name>[All]command move</name>
+    	<identifier>private.movecommand</identifier>
+        <not>SUBLIMETEXT</not>
+    	<autogen> __KeyToKey__ KeyCode::I, ModifierFlag::COMMAND_L , KeyCode::CURSOR_UP</autogen>
+    	<autogen> __KeyToKey__ KeyCode::M, ModifierFlag::COMMAND_L , KeyCode::CURSOR_DOWN</autogen>
+    	<autogen> __KeyToKey__ KeyCode::K, ModifierFlag::COMMAND_L , KeyCode::CURSOR_LEFT</autogen>
+    	<autogen> __KeyToKey__ KeyCode::L, ModifierFlag::COMMAND_L , KeyCode::CURSOR_RIGHT</autogen>
+    	<autogen> __KeyToKey__ KeyCode::D, ModifierFlag::COMMAND_L , KeyCode::DELETE, ModifierFlag::FN</autogen>
+    	<autogen> __KeyToKey__ KeyCode::J, ModifierFlag::COMMAND_L , KeyCode::CURSOR_LEFT, ModifierFlag::COMMAND_L</autogen>
+    	<autogen> __KeyToKey__ KeyCode::SEMICOLON, ModifierFlag::COMMAND_L , KeyCode::CURSOR_RIGHT, ModifierFlag::COMMAND_L</autogen>
+    	<autogen> __KeyToKey__ KeyCode::QUOTE, ModifierFlag::COMMAND_L , KeyCode::DELETE</autogen>
+    	<autogen> __KeyToKey__ KeyCode::BRACKET_LEFT, ModifierFlag::COMMAND_L , KeyCode::CURSOR_UP, ModifierFlag::FN</autogen>
+    	<autogen> __KeyToKey__ KeyCode::BRACKET_RIGHT, ModifierFlag::COMMAND_L , KeyCode::CURSOR_DOWN, ModifierFlag::FN</autogen>
+
+    </item>
+
+    <item>
+        <name>Chinese Input</name>
+        <identifier>change_input</identifier>
+        <autogen>__KeyOverlaidModifier__ KeyCode::OPTION_R, KeyCode::VK_CHANGE_INPUTSOURCE_ENGLISH, KeyCode::VK_WAIT_100MS, KeyCode::SPACE, ModifierFlag::COMMAND_L | ModifierFlag::OPTION_L
+        </autogen>
+        <!-- <autogen>__KeyOverlaidModifier__ KeyCode::OPTION_R,
+            KeyCode::VK_CHANGE_INPUTSOURCE_CHINESE_SOGOU</autogen>
+ -->
+    </item>
+
+<!--     <item>
+        <name>USB keyboard</name>
+        <identifier>private.usb_keyboard</identifier>
+
+        <device_only>DeviceVendor::Ducky,DeviceProduct::Shine3</device_only>
+
+        <autogen> __KeyToKey__ KeyCode::COMMAND_L, KeyCode::OPTION_L</autogen>
+        <autogen> __KeyToKey__ KeyCode::COMMAND_R, KeyCode::OPTION_R</autogen>
+        <autogen> __KeyToKey__ KeyCode::OPTION_L, KeyCode::COMMAND_L</autogen>
+        <autogen> __KeyToKey__ KeyCode::OPTION_R, KeyCode::COMMAND_R</autogen>
+
+        
+    </item> -->
+</root>
+
